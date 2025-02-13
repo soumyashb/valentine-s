@@ -2,4 +2,4 @@
 
 (i honestly have no idea what i made)
 
-https://soumyashb.github.io/valentine-s/- click to view the live site 
+https://soumyashb.github.io/valentine-s/ - click to view the live site 
