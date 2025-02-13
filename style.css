@@ -1,0 +1,213 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lavender;
+}
+body.different-bg{
+    background-color:black;
+}
+
+.colorful-heading{
+    color:deeppink;
+}
+.coloring{
+    color:plum;
+}
+.colorful-heading1{
+    color:crimson;
+}
+.colorful-heading2{
+    color:blueviolet;
+}
+.colorful-heading3{
+    color:coral;
+}
+.coloring1{
+    color:hotpink;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 500px;
+    margin: 20px;
+}
+
+.container img {
+    max-width: 400px;
+}
+
+
+.container .btn {
+    display:flex;
+    gap: 65px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    background: #ffffff;
+    padding: 10px 25px;
+    border-radius: 77px;
+    box-shadow: 0.5rem 1rem 3rem hsl(0, 0%, 0%, 0.3);
+}
+
+.fade-in {
+    animation: fade-in 2s ease-in;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.fade-in1 {
+    animation: fade-in1 3s ease-in;
+}
+
+@keyframes fade-in1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* for the yes.html page two pics side by side */
+.image-container{
+    display: flex;
+}
+.image-container img:first-child {
+    width: 60%;
+}
+.image-container img:last-child {
+    width: 40%;
+}
+
+
+/* teardrop for no1.html */
+@keyframes teardropFall {
+    0% {
+      top: 60px;
+      opacity: 1;
+    }
+    100% {
+      top: 100px;
+      opacity: 0;
+    }
+  }
+  
+  .container {
+    position: relative;
+    width: 800px;
+    margin: 50px auto;
+  }
+  
+  .face {
+    display: block;
+    width: 100%;
+  }
+  
+  .teardrop {
+    position: absolute;
+    left: 230px; 
+    top: 10px;
+    width: 10px;
+    height: 20px;
+    background-color: #00f;
+    border-radius: 50%;
+    animation-name: teardropFall;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+  }
+
+
+  /*heart floating for yes.html*/
+  @keyframes hearts {
+    0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-10vh) scale(0.5);
+        opacity: 0;
+    }
+}
+
+.heart {
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    background-color: red;
+    transform: rotate(-45deg);
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.heart::before {
+    top: -25px;
+    left: 0;
+}
+
+.heart::after {
+    left: 25px;
+    top: 0;
+}
+
+.heartContainer {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.heart {
+    animation: hearts 10s linear infinite;
+}
+
+.heart:nth-child(2) {
+    left: 20%;
+    animation-delay: 2s;
+}
+
+.heart:nth-child(3) {
+    left: 40%;
+    animation-delay: 4s;
+}
+
+.heart:nth-child(4) {
+    left: 60%;
+    animation-delay: 6s;
+}
+
+.heart:nth-child(5) {
+    left: 80%;
+    animation-delay: 8s;
+}
