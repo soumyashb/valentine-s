@@ -102,45 +102,6 @@ body.different-bg{
     width: 40%;
 }
 
-
-/* teardrop for no1.html */
-@keyframes teardropFall {
-    0% {
-      top: 60px;
-      opacity: 1;
-    }
-    100% {
-      top: 100px;
-      opacity: 0;
-    }
-  }
-  
-  .container {
-    position: relative;
-    width: 800px;
-    margin: 50px auto;
-  }
-  
-  .face {
-    display: block;
-    width: 100%;
-  }
-  
-  .teardrop {
-    position: absolute;
-    left: 230px; 
-    top: 10px;
-    width: 10px;
-    height: 20px;
-    background-color: #00f;
-    border-radius: 50%;
-    animation-name: teardropFall;
-    animation-duration: 1s;
-    animation-timing-function: ease-out;
-    animation-iteration-count: infinite;
-  }
-
-
   /*heart floating for yes.html*/
   @keyframes hearts {
     0% {
@@ -194,7 +155,7 @@ body.different-bg{
 
 .heart:nth-child(2) {
     left: 20%;
-    animation-delay: 2s;
+    animation-delay: 1s;
 }
 
 .heart:nth-child(3) {
